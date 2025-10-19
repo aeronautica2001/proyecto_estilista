@@ -1,0 +1,15 @@
+# Archivos de entorno / credenciales
+.env
+*.env
+
+# Datos locales que no quieres subir
+clientas.json
+
+# Archivos pycache
+__pycache__/
+*.py[cod]
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,3 @@
+twilio==8.1.0  # Versión estable de la librería de Twilio
+schedule==1.2.1 # Librería para la programación de tareas
+# Puedes agregar otras dependencias si las usas, como python-dotenv si la usas para cargar las variables
