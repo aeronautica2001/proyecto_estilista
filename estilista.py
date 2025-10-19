@@ -3,8 +3,9 @@
 
 """
 Estilista - Sistema de recordatorios WhatsApp (Twilio)
-Versión PRO: manejo manual de 'proximo_recordatorio', persistencia JSON,
-modo debug con DummyClient, y prevención de envíos duplicados.
+
+Nota: Se añadió un alias verificar_recordatorios_diarios() para mantener
+compatibilidad con imports antiguos (por ejemplo desde auto_estilista.py).
 """
 
 import json
@@ -275,6 +276,14 @@ def verificar_tratamientos():
                 continue
 
     print(f"\n✅ Verificación finalizada. Total mensajes enviados: {enviados}")
+
+# --- Añadido: alias para compatibilidad con nombre antiguo usado por auto_estilista.py ---
+def verificar_recordatorios_diarios():
+    """
+    Wrapper/alias para mantener compatibilidad con importaciones que esperan
+    'verificar_recordatorios_diarios'. Llama a verificar_tratamientos.
+    """
+    return verificar_tratamientos()
 
 # ==============================================
 # FUNCIONES DE GESTIÓN (Agregar / Mostrar / Actualizar)
