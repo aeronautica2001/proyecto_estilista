@@ -62,14 +62,14 @@ def whatsapp_webhook():
 
     try:
         if cmd in ("AYUDA", "HELP"):
-            reply = ("Comandos:\n"
-                     "- AGREGAR Nombre; telefono; tratamiento; ultimo(AAAA-MM-DD opcional); proximo(AAAA-MM-DD opcional)\n"
-                     "- LISTAR\n"
-                     "- VER <id>\n"
-                     "- ACTUALIZAR id; campo; valor\n"
-                     "- RECORDAR  -> Ejecuta verificación ahora\n"
-                     "- AYUDA")
-        elif cmd == "LISTAR":
+    reply = ("Comandos:\n"
+             "- AGREGAR Nombre; telefono; tratamiento; ultimo(AAAA-MM-DD opcional); proximo(AAAA-MM-DD opcional)\n"
+             "- LISTAR\n"
+             "- VER id\n"
+             "- ACTUALIZAR id; campo; valor\n"
+             "- RECORDAR  -> Ejecuta verificación ahora\n"
+             "- AYUDA")
+elif cmd == "LISTAR":
             if not clientas:
                 reply = "No hay clientas registradas."
             else:
